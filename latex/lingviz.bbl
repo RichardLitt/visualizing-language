@@ -1,0 +1,86 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Chomsky}2000]{chomsky}
+N.~Chomsky.
+\newblock 2000.
+\newblock {\em New Horizons in the Study of Language and Mind}.
+\newblock Cambridge University Press, Cambridge, UK.
+
+\bibitem[\protect\citename{Culy}1985]{culy}
+Christopher Culy.
+\newblock 1985.
+\newblock The complexity of the vocabulary of bambara.
+\newblock {\em Linguistics and Philosophy}, 8:345--351.
+\newblock 10.1007/BF00630918.
+
+\bibitem[\protect\citename{Cysouw}2011]{cysouw2011}
+M.~Cysouw.
+\newblock 2011.
+\newblock Quantitative explorations of the world-wide distribution of rare
+  characteristics, or: the exceptionality of northwestern european languages.
+\newblock In H.~Simon and Heike Wiese, editors, {\em Expecting the Unexpected},
+  pages 411--431. De Gruyter Mouton, Berlin, DE.
+
+\bibitem[\protect\citename{{Daum\'e III} and Campbell}2007]{daume07implication}
+Hal {Daum\'e III} and Lyle Campbell.
+\newblock 2007.
+\newblock A {B}ayesian model for discovering typological implications.
+\newblock In {\em Conference of the Association for Computational Linguistics
+  (ACL)}, Prague, Czech Republic.
+
+\bibitem[\protect\citename{{Daum\'e III}}2009]{daume09areal}
+Hal {Daum\'e III}.
+\newblock 2009.
+\newblock Non-parametric {B}ayesian model areal linguistics.
+\newblock In {\em North American Chapter of the Association for Computational
+  Linguistics (NAACL)}, Boulder, CO.
+
+\bibitem[\protect\citename{Dryer and Haspelmath}2011]{wals-2011}
+Matthew~S. Dryer and Martin Haspelmath, editors.
+\newblock 2011.
+\newblock {\em The World Atlas of Language Structures Online}.
+\newblock Max Planck Digital Library, Munich, 2011 edition.
+
+\bibitem[\protect\citename{Dunn \bgroup et al.\egroup
+  }2011]{Dunn_Greenhill_Levinson_Gray_2011}
+Michael Dunn, Simon~J Greenhill, Stephen~C Levinson, and Russell~D Gray.
+\newblock 2011.
+\newblock Evolved structure of language shows lineage-specific trends in
+  word-order universals.
+\newblock {\em Nature}, 473(7345):79--82.
+
+\bibitem[\protect\citename{Georgi \bgroup et al.\egroup }2010]{georgi:etal:10}
+Ryan Georgi, Fei Xia, and Will Lewis.
+\newblock 2010.
+\newblock Comparing language similarity across genetic and typologically-based
+  groupings.
+\newblock In {\em Proceedings of COLING 2010}.
+
+\bibitem[\protect\citename{Greenberg}1963]{greenberg}
+J.H. Greenberg.
+\newblock 1963.
+\newblock `some universals of grammar with particular reference to the order of
+  meaningful elements.
+\newblock In J.H. Greenberg, editor, {\em Universals of Language}, pages
+  58--90. MIT Press, Cambridge, MA.
+
+\bibitem[\protect\citename{Lewis and Xia}2008]{lewis:xia:08}
+William Lewis and Fei Xia.
+\newblock 2008.
+\newblock Automatically identifying computationally relevant typological
+  features.
+\newblock In {\em Proceedings of IJCNLP 2008}.
+
+\bibitem[\protect\citename{Lewis}2009]{ethnologue}
+M.~Paul Lewis, editor.
+\newblock 2009.
+\newblock {\em Ethnologue: Languages of the World}.
+\newblock SIL International, Dallas, TX, sixteenth edition.
+
+\bibitem[\protect\citename{List}2009]{multitree}
+LINGUIST List, editor.
+\newblock 2009.
+\newblock {\em Multitree: A digital library of language relationships}.
+\newblock Eastern Michigan University, Ypsilanti, MI, 2009 edition.
+
+\end{thebibliography}
