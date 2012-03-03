@@ -998,6 +998,7 @@ if __name__ == "__main__":
 
     # Or testing the sparseness of the data
     if sys.argv[1] == 'sparse':
+        # Prints values filled, values total, and percentage. 
         print sparse(sys.argv[2])
 
     # Or sorting all of the languages in the area at once
