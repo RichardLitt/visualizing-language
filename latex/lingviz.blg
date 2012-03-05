@@ -2,44 +2,44 @@ This is BibTeX, Version 0.99c (TeX Live 2009)
 The top-level auxiliary file: lingviz.aux
 The style file: acl.bst
 Database file #1: lingviz.bib
-You've used 12 entries,
+You've used 15 entries,
             2490 wiz_defined-function locations,
-            630 strings with 6405 characters,
-and the built_in function-call counts, 4411 in all, are:
-= -- 449
-> -- 144
-< -- 2
-+ -- 46
-- -- 43
-* -- 291
-:= -- 725
-add.period$ -- 51
-call.type$ -- 12
-change.case$ -- 67
-chr.to.int$ -- 12
-cite$ -- 12
-duplicate$ -- 223
-empty$ -- 383
-format.name$ -- 58
-if$ -- 944
+            653 strings with 7396 characters,
+and the built_in function-call counts, 6009 in all, are:
+= -- 616
+> -- 222
+< -- 4
++ -- 74
+- -- 71
+* -- 417
+:= -- 971
+add.period$ -- 65
+call.type$ -- 15
+change.case$ -- 93
+chr.to.int$ -- 15
+cite$ -- 15
+duplicate$ -- 287
+empty$ -- 493
+format.name$ -- 89
+if$ -- 1288
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 13
-newline$ -- 76
-num.names$ -- 43
-pop$ -- 89
+missing$ -- 17
+newline$ -- 95
+num.names$ -- 51
+pop$ -- 115
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 109
 quote$ -- 0
-skip$ -- 145
+skip$ -- 199
 stack$ -- 0
-substring$ -- 151
-swap$ -- 42
-text.length$ -- 2
+substring$ -- 228
+swap$ -- 63
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 104
 warning$ -- 0
-while$ -- 33
-width$ -- 16
-write$ -- 177
+while$ -- 45
+width$ -- 17
+write$ -- 225

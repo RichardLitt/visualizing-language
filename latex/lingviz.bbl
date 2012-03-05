@@ -77,10 +77,39 @@ M.~Paul Lewis, editor.
 \newblock {\em Ethnologue: Languages of the World}.
 \newblock SIL International, Dallas, TX, sixteenth edition.
 
-\bibitem[\protect\citename{List}2009]{multitree}
-LINGUIST List, editor.
+\bibitem[\protect\citename{Mayer \bgroup et al.\egroup }2010]{mayer:etal:2010}
+Thomas Mayer, Christian Rohrdantz, Frans Plank, Peter Bak, Miriam Butt, and
+  Daniel~A. Keim.
+\newblock 2010.
+\newblock Consonant co-occurrence in stems across languages: automatic analysis
+  and visualization of a phonotactic constraint.
+\newblock In {\em Proceedings of the 2010 Workshop on NLP and Linguistics:
+  Finding the Common Ground}, NLPLING '10, pages 70--78, Stroudsburg, PA, USA.
+  Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Multitree}2009]{multitree}
+Multitree.
 \newblock 2009.
 \newblock {\em Multitree: A digital library of language relationships}.
-\newblock Eastern Michigan University, Ypsilanti, MI, 2009 edition.
+\newblock Institute for Language Information and Techology (LINGUIST List),
+  Eastern Michigan University, Ypsilanti, MI, 2009 edition.
+
+\bibitem[\protect\citename{Rohrdantz \bgroup et al.\egroup
+  }2010]{rohrdantz:etal:2010}
+Christian Rohrdantz, Thomas Mayer, Miriam Butt, Frans Plank, and Daniel~A.
+  Keim.
+\newblock 2010.
+\newblock Comparative visual analysis of cross-linguistic features.
+\newblock In {\em Proceedings of the International Symposium on Visual
+  Analytics Science and Technology (EuroVAST 2010)}, pages 27--32.
+\newblock Poster paper; peer-reviewed (abstract).
+
+\bibitem[\protect\citename{Wieling \bgroup et al.\egroup
+  }2011]{10.1371/journal.pone.0023613}
+Martijn Wieling, John Nerbonne, and R.~Harald Baayen.
+\newblock 2011.
+\newblock Quantitative social dialectology: Explaining linguistic variation
+  geographically and socially.
+\newblock {\em PLoS ONE}, 6(9):e23613, 09.
 
 \end{thebibliography}

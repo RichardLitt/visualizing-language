@@ -38,8 +38,12 @@ This paper presents a novel way of visualising relationships between languages. 
 \end{abstract}
 
 \section{Introduction}
-
-This paper presents a novel way of visualising relationships between languages. Relationships between languages can be understood with respect to linguistic features of the languages, their geographical proximity, and their status with respect to historical development. The visualisations presented in this paper are the first to bring together these three perspectives into a single image. One line of recent work brings computational methods to bear on the formation and use of large typological databases, often using sophisticated statistical techniques to discover relations between languages \cite[among others]{cysouw2011,daume07implication,daume09areal}, and another line of work uses typological data in natural language processing \cite[for example]{georgi:etal:10,lewis:xia:08}, but we are unaware of any previous approaches to visually presenting the resulting data. Here, we address this gap by using data from the World Atlas of Language Structures \cite{wals-2011} to develop heat maps that can visually show the interconnected relationships between languages and language families. 
+This paper presents a novel %Should be fine - it is still novel
+way of visualising relationships between languages. Relationships between languages can be understood with respect to linguistic features of the languages, their geographical proximity, and their status with respect to historical development. The visualisations presented in this paper are part of a new attempt %instead of the first time 
+to bring together these three perspectives into a single image. One line of recent work brings computational methods to bear on the formation and use of large typological databases, often using sophisticated statistical techniques to discover relations between languages \cite[among others]{cysouw2011,daume07implication,daume09areal}, and another line of work uses typological data in natural language processing \cite[for example]{georgi:etal:10,lewis:xia:08}, but we are unaware of any previous approaches to visually presenting the resulting data in this way, although there has been similar work \cite{mayer:etal:2010,rohrdantz:etal:2010} in visualising differences in linguistic typology, phylogeny \cite{multitree}% Fixed reference should be good now
+, and geographical variation \cite{10.1371/journal.pone.0023613}. %Citing the Hong Kong paper, a couple of others. 
+ Here, we address the gap with combining together phylogeny, typology, and geography %added for extra clarity
+ by using data from the World Atlas of Language Structures \cite{wals-2011} to develop heat maps that can visually show the interconnected relationships between languages and language families. 
 
 The main envisioned application of our visualisations is in the area of linguistic typology. Typology has been used to derive implications about possible languages, and about the ordering of the human mind. Different theorists have taken different views on the relationship between typology and the universality of languages. For example, Greenberg \shortcite{greenberg}, a foundational work, identifies a number of cross-linguistic typological properties and implications and aims to present them as truly universal -- relevant for \textit{all} languages. In a similar vein, typological universals have been employed as evidence in a generative story regarding language learning \cite{chomsky}.
 
@@ -142,14 +146,12 @@ In this paper we present a new method for visualising relationships between lang
 
 In this work we placed strong restrictions on both feature coverage and selection of salient features for representation, reducing the number of graphs produced to 6 with geographic focus and 8 with phylogenetic focus. One topic for future work is to explore other ways of working with and expanding the available data in order to access even more useful visualisations.
 
-\newpage
 \bibliographystyle{acl}
 \bibliography{lingviz}
 
 \end{document}
 
 
-%%%% DIdn't get to reviewer 1 yet. 
 %==== Reviewer Comments ====
 %I would recommend the authors not to write that these are the "first"
 %visualizations that integrate geographical, phylogenetic, and typological data.
@@ -159,12 +161,17 @@ In this work we placed strong restrictions on both feature coverage and selectio
 %http://multitree.linguistlist.org/) and with respect to geographical
 %distributions, for example:
 %
-%%%%%I can't find the above reference. We should make explicit that we're modelling them all together at once, which I still don't think has been done. 
+%%%%%I added the above reference in the intro, along with another one from the same group. We are still different in combining all of these, though. 
 
 
 %- Nerbonne et al.: Gabmap - A Web Application for Dialectology.
+%%%% Hard to find bibtex, found this: John Nerbonne, Rinke Colen, Charlotte Gooskens, Peter Kleiweg and Therese Leinonen
+%Gabmap — A Web Application for Dialectology. Dialectologia. Special Issue II, (2011), pp.65-89. (Spec. Iss. Production, Perception and Attitude ed. by John Nerbonne, Stef Grondelaers, Dirk Speelman & Maria-Pilar Perea) 
+%%%%hard to bibtexise...
 %- Mayer et al.: Consonant co-occurrence in stems across languages: Automatic
 %analysis and visualization of a phonotactic constraint.
+%
+%%%% We should perhaps state that these did separate work, such as just geographical distribution, or just phylogenetic content.
 %
 %Usually heat maps are applied to quantitative data. However, the WALS features are mostly ordinal or nominal. For nominal data a wrong impression might be
 %given. Perceptionally, orange is closer to red than yellow is to red. The idea
@@ -175,9 +182,13 @@ In this work we placed strong restrictions on both feature coverage and selectio
 %variable. You should handle the nominal data dimensions of the WALS data
 %similarly.
 
+%%%%% Rory, can you get this one?
+
 %Consequently, I would also recommend to name the visualization "pixel map" or
 %"dense pixel display" instead of "heat map" in order to stay consistent with
 %the standard visualization terminology.
+%
+%%%% Not sure about this. I think this is probably still a heat map. We'd have to change the title of the piece. Alexis - would we be able to do that?
 %
 %============================================================================
 %                           REVIEWER #2
@@ -261,6 +272,7 @@ In this work we placed strong restrictions on both feature coverage and selectio
 %- Some of the details of the visualizations are not entirely clear to me. For
 %instance, how are the languages arranged in the geographically-focused heat
 %maps? According to their longitudes? Why not according to their latitudes?
+
 %%%% Uh, we actually explain this. Was this guy reading the paper?
 
 %Likewise, in the phylogenetically-focused heat map (isn't the ordering in Fig 2
@@ -284,3 +296,5 @@ In this work we placed strong restrictions on both feature coverage and selectio
 %
 %I would recommend including previous work on visualizing language data (e.g.,
 %Nerbonne's or Goebl's work for dialect data where language features are plotted with their geographical information)
+%
+%%%% So, we should include Nerbonnés work on Gabmap %% Included one of his. 

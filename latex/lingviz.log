@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.12.15)  3 MAR 2012 19:55
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.12.15)  5 MAR 2012 13:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -474,19 +474,9 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 34.
 (/usr/local/texlive/2009/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1286) in paragraph at lines 46--47
+Underfull \hbox (badness 1286) in paragraph at lines 50--51
 []\OT1/ptm/m/n/10.95 Taking a dif-fer-ent per-spec-tive, Dunn \OT1/ptm/m/it/10.
 95 et al
- []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 48--49
-[]\OT1/ptm/m/n/10.95 The most com-pre-hen-sive com-pu-ta-tional re-
- []
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 48--49
-\OT1/ptm/m/n/10.95 source for lin-guis-tic ty-pol-ogy cur-rently avail-
  []
 
 
@@ -498,37 +488,43 @@ Underfull \vbox (badness 7012) has occurred while \output is active []
 
 
 ]
+Underfull \hbox (badness 1418) in paragraph at lines 52--53
+[]\OT1/ptm/m/n/10.95 The most com-pre-hen-sive com-pu-ta-tional re-
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 52--53
+\OT1/ptm/m/n/10.95 source for lin-guis-tic ty-pol-ogy cur-rently avail-
+ []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
-
-Underfull \vbox (badness 7047) has occurred while \output is active []
-
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 [][]$\OT1/pcr/m/n/9 https : / / github . com / RichardLitt /
  []
 
-<graph2yimassmall.pdf, id=16, 481.40105pt x 391.17863pt>
+<graph2yimassmall.pdf, id=15, 481.40105pt x 391.17863pt>
 File: graph2yimassmall.pdf Graphic file (type pdf)
 
 <use graph2yimassmall.pdf>
-Overfull \hbox (7.22743pt too wide) in paragraph at lines 103--104
+Overfull \hbox (7.22743pt too wide) in paragraph at lines 107--108
 [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3758) has occurred while \output is active []
 
  [3 <./graph2yimassmall.pdf>]
 <graph3nigercongosmall.pdf, id=38, 462.06764pt x 328.02295pt>
 File: graph3nigercongosmall.pdf Graphic file (type pdf)
 
 <use graph3nigercongosmall.pdf>
-Overfull \hbox (7.22743pt too wide) in paragraph at lines 120--121
+Overfull \hbox (7.22743pt too wide) in paragraph at lines 124--125
 [][] 
  []
 
-[4 <./graph3nigercongosmall.pdf>] (./lingviz.bbl
+(./lingviz.bbl
 Underfull \hbox (badness 1546) in paragraph at lines 53--58
 []\OT1/ptm/m/n/10 Ryan Georgi, Fei Xia, and Will Lewis.  2010.
  []
@@ -538,24 +534,29 @@ Underfull \hbox (badness 1152) in paragraph at lines 68--73
 []\OT1/ptm/m/n/10 William Lewis and Fei Xia.  2008.  Au-to-mat-i-
  []
 
+[4 <./graph3nigercongosmall.pdf>]
+Underfull \hbox (badness 1859) in paragraph at lines 109--114
+[]\OT1/ptm/m/n/10 Martijn Wiel-ing, John Ner-bonne, and R. Har-ald
+ []
+
 ) [5
 
 ] (./lingviz.aux) ) 
 Here is how much of TeX's memory you used:
- 10020 strings out of 493848
- 191884 string characters out of 3149206
- 230008 words of memory out of 3000000
- 13080 multiletter control sequences out of 15000+200000
+ 10023 strings out of 493848
+ 191952 string characters out of 3149206
+ 230088 words of memory out of 3000000
+ 13083 multiletter control sequences out of 15000+200000
  29483 words of font info for 68 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 56i,11n,55p,1133b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,11n,55p,1087b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2009/texmf-dist/fonts/enc/dvips/base/8r.
 enc}</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
 fb></usr/local/texlive/2009/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
 /local/texlive/2009/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/tex
 live/2009/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2009/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on lingviz.pdf (5 pages, 487244 bytes).
+Output written on lingviz.pdf (5 pages, 488808 bytes).
 PDF statistics:
  290 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
