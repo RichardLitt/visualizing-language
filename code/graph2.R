@@ -1,6 +1,7 @@
 source("subs.R")
+require("RColorBrewer")
 
-geo_data = read.table("data_new/geo-clean-30-datapoints-r-500-fixed.csv",sep="\t",quote="\"",header=T)
+geo_data = read.table("data/geo-clean-30-datapoints-r-500-fixed.csv",sep="\t",quote="\"",header=T)
 
 # Let's determine which features to plot. We want to use
 # the features with the fewest most data, i.e. fewest NAs 
@@ -25,14 +26,11 @@ sorted.features = sort(colMeans(is.na(geo_data[,11:width])))
 # Remove the V's from the colnames
 #names(sorted.features) = substr(names(sorted.features),2,4)
 
-# Get the 15 best-represented features
-best.features = sorted.features[1:15]
-
 
 make.feature.subset.heatmap = function(language,path) {
 # Get the subset of the features we want, relative to
 # the center language we want
-	data.subset = geo_data[which(geo_data$center.language==language),c(1:10,(as.numeric(names(best.features))))]
+	data.subset = geo_data[which(geo_data$center.language==language),]
 
 # Find the family information; this will allow us
 # to plot the right colors in the heatmap.
@@ -41,14 +39,46 @@ make.feature.subset.heatmap = function(language,path) {
 # Remove the non-feature columns and transpose the data
 	data.subset = t(data.subset[,11:ncol(data.subset)])
 
+# Get the 15 best-represented features, and throw out any
+# that are all the same number. Meanwhile, normalize the
+# feature values.
+	best.features = names(sorted.features[1:15])
+
+	nlevels = rep(NA,15)
+	difference = Inf
+	index = 15
+	while(difference!=0) {
+		new.best.features = best.features
+		for(i in 1:length(best.features)) {
+			feature.row = data.subset[best.features[i],]
+			nlevels[i] = length(levels(as.factor(feature.row)))
+			if(nlevels[i]==1) {
+				new.best.features = new.best.features[-i]
+			} else {
+				data.subset[best.features[i],] = as.numeric(factor(data.subset[best.features[i],],labels=1:nlevels[i]))
+			}
+		}
+
+		difference = 15-length(new.best.features)
+		if(difference > 0) {
+			best.features = c(new.best.features,names(sorted.features[(index+1):(index+difference)]))
+			index = index+difference
+		}
+	}
+
+# Get rid of all of the other features
+	data.subset = data.subset[(best.features),]
+
+#	data.subset = geo_data[which(geo_data$center.language==language),c(1:10,(as.numeric(names(best.features))))]
+
 # Set the names of the columns and rows
 	colnames(data.subset) = get.language(geo_data$wals_code[as.numeric(colnames(data.subset))])
-	rownames(data.subset) = get.feature(names(best.features),shift=10)
+	rownames(data.subset) = get.feature(best.features,shift=10)
 
 # And voila!
 	pdf(path)
 	par(oma=c(2,2,2,16))
-	heatmap(data.subset,Rowv=NA,Colv=NA,ColSideColors=colcolors)
+	heatmap(data.subset,Rowv=NA,Colv=NA,col=brewer.pal(max(nlevels),"Set1"),ColSideColors=colcolors)
 	dev.off()
 }
 

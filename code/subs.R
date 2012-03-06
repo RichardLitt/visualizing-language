@@ -1,4 +1,4 @@
-feature.list = read.table("features.csv",header=T,sep=",",stringsAsFactors=F)
+feature.list = read.table("features.csv",header=T,sep="\t",stringsAsFactors=F)
 language.list = read.table("languages.csv",header=T,sep="\t",quote="\"",stringsAsFactors=F)
 
 # Given a particular column in a dataset, find what
