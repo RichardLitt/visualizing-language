@@ -76,7 +76,7 @@ Geographic distance is an important aspect of typological study because neighbou
 % 2678*2678 comparisons.
 %   http://www.codecodex.com/wiki/Calculate_Distance_Between_Two_Points_on_a_Globe#Python
 %Note - reprint the data with this formula worked in, as it makes more sense than what you're doing at the moment.
-A crucial aspect of our visualisations is that we produce them only for sets of languages within a reasonable geographic proximity and with sufficient feature coverage within WALS.
+A crucial aspect of our visualisations is that we produce them only for sets of languages within a reasonable geographic proximity and with sufficient feature coverage in WALS.
 
 For this study, we used two approaches to clustering languages according to geographic distance. First, we chose an arbitrary radius in order to create a decision boundary for clustering neighbouring languages. For each language, that language's location is fixed as the centroid of the cluster and every language within the given radius is examined. We found that a radius of 500 kilometres provides a sufficient number of examples even after cleaning low-coverage languages from the WALS data. 
 
@@ -95,28 +95,34 @@ All data was downloaded freely from WALS, all coding was done in either Python o
 
 In a two-dimensional heat map, each cell of a matrix is filled with a colour representing that cell's value. In our case, the colour of the cell represents the normalised value of a linguistic feature according to WALS. Languages with the same colour in a given row have the same value for that typological feature.\footnote{Due to this reliance on colour, we strongly suggest viewing the heat maps presented here in colour.} Below we discuss two types of heat maps, focusing first on geographic and then on phylogenetic features.
 
-\subsection{Geographically-focused heat maps}
-For the geographic distance maps, for each language present in the cleaned data, we identified all possible languages that lay within 500km, and sorted these languages until only the 16 closest neighbours were selected. Once the set of languages was determined, we selected for graphing only the most commonly-occurring features across that set of languages.
-%We picked features to graph from among the resulting languages based on how common they were across the selected languages. 
 
-Each final list was then resorted. The source language was centred in the map. This was due to one of the primary issues with using distance on a two dimensional graph; distance between two non-source languages is not shown, meaning that one could be to the north, and the other to the south. This means that the languages on the extremes of the map may be far apart from each other, and should be viewed with caution. %Does this work? Took out the egyptian example. 
- This is not ideal, and was the main justification for limiting the sphere of possible geographical languages to a reasonable distance, given the data.
-
-
-\begin{figure}[!b]
+\begin{figure}[!t]
 \includegraphics[width=3.1in]
 {graph2yim.pdf} 
 \caption{Geographically-focused heat map; see text for details. The bar at the top of the image represents the language family of the language in that column: Pink = Border; Red = Trans-New Guinea; Blue = Sepik; Brown = Lower Sepik-Ramu; Purple = Torricelli; Green = Skou; and Orange = Sentani.} 
 \label{fig:heat1} 
-
 \end{figure}
 
-Figure~\ref{fig:heat1} shows a geographically-focused heat map centred on Yimas, spoken in New Guinea, with various syntactic features. The features were chosen based on their relative absence of missing data. For `Periphrastic Causative Constructions', the heat map shows partial grouping of languages closer to Yimas, and less similarity at a greater distance, as can be seen by the similar dark red features close to Yimas, but only orange at the extremes. The checkerboard pattern for dominant word orders may suggest groups that have been split by the data-centring function. In general, however, this graph shows that, for these features, the languages are for the most part homogenous. This is unlikely to be a chance effect, given the similarity in language families, as can be seen in the very top bar of the graph. Also, the checkerboard pattern for `Languages with 2 Dominant Orders of S, O, \& V' and `Multiple Negative Constructions in SVO Languages' suggests that the two corresponding WALS features avoid each other (have a negative correlation). 
+
+\subsection{Geographically-focused heat maps}
+For the geographic distance maps, for each language present in the cleaned data, we identified all possible languages that lay within 500km, and sorted these languages until only the 16 closest neighbours were selected. Once the set of languages was determined, we selected for graphing only the most commonly-occurring features across that set of languages.
+%We picked features to graph from among the resulting languages based on how common they were across the selected languages. 
+
+
+To present the visualisation, we first centred the source language in the map. This decision was made in order to reduce the effect of one of the primary issues with using distance on a two dimensional graph; distance between two non-source languages is not shown, meaning that one could be to the north and another to the south. This means that the languages on the extremes of the map may be far apart from each other, and should be viewed with caution. %Does this work? Took out the egyptian example. 
+%This issue the main justification for limiting the sphere of possible geographical languages to a %reasonable distance, given the data.
+
+
+Figure~\ref{fig:heat1} shows a geographically-focused heat map with values for various morphological and word order features. The map is centred on Yimas, a language spoken in New Guinea. The features presented represent a particularly non-sparse section of WALS for this language area. A number of insights can be seen here. Most prominently, these languages are quite homogenous with respect to the selected features. Given that most of the languages do indeed belong to the same language family (cf. top bar of the graph), this is unlikely to be a chance effect.  In the 5th row (`Relationship between the Order of V\&O and the Order of Adj\&N'), we see via the cluster of red cells a partial grouping of languages close to Yimas, with less similarity at a greater distance. The nearly alternating pattern we see for `Position of Negative Word With Respect to S,O,\&V' may suggest areal groups that have been split by the data-centring function. Also, the checkerboard pattern for this feature and the one below (`Postverbal Negative Morphemes') suggests a possible negative correlation between these two linguistic features.
+
+
+% The features were chosen based on their relative absence of missing data. For `Periphrastic Causative Constructions', the heat map shows partial grouping of languages closer to Yimas, and less similarity at a greater distance, as can be seen by the similar dark red features close to Yimas, but only orange at the extremes. The checkerboard pattern for dominant word orders may suggest groups that have been split by the data-centring function. In general, however, this graph shows that, for these features, the languages are for the most part homogenous. This is unlikely to be a chance effect, given the similarity in language families, as can be seen in the very top bar of the graph. Also, the checkerboard pattern for `Languages with 2 Dominant Orders of S, O, \& V' and `Multiple Negative Constructions in SVO Languages' suggests that the two corresponding WALS features avoid each other (have a negative correlation). 
 
 \subsection{Phylogenetically-focused heat maps}
 
-For each language we searched for other languages coming from the same family, subfamily, or genus. Figure~\ref{fig:heat2} shows a phylogenetically-focused heat map for Niger-Congo languages, arranged from west to east. This example was chosen because the variance along the north-south access was optimally less than in other possible datasets. % Unsure about this sentence
-It shows clear clusterings in the eastern languages, especially for negation orders; this can be seen by looking at the red points in western languages compared to the yellow in the eastern languages. It also shows groupings of pronominal subject expression and agreement marking agreement for the eastern languages clearly. We also see some groupings of feature values in adjacent languages, for example: Bambara and Supyire. Especially given the importance of Bambara for syntactic argumentation \cite{culy}, this graph is an excellent example of visualisation pointing out an intriguing area for closer analysis.
+To produce phylogenetically-focused visualisations, for each language we identified other languages coming from the same family, subfamily, or genus. Figure~\ref{fig:heat2} shows a phylogenetically-focused heat map for Niger-Congo languages, arranged from west to east. A number of the western languages show red cells for features related to relative clauses; these can be compared to mostly blue cells in the eastern languages. We also see some apparent groupings for variable word order in negative clauses (red cells in western languages) and for NegSVO Order (purple cells in western languages). For some pairs of adjacent languages (most notably Bambara and Supyire), we see clusters of shared features. Especially give the importance of Bambara for 
+%This example was chosen because the variance along the north-south access was optimally less than in other possible datasets. % Unsure about this sentence
+syntactic argumentation \cite{culy}, this graph is an excellent example of visualisation pointing out an intriguing area for closer analysis.
 
 %%% Rory, can you redo this graph so that it is from west to east? That would be more intuitive, wouldn't it? Instead of switching around the cardinal directions... Or is it already west to east?
 % ==========
