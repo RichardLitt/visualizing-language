@@ -75,7 +75,7 @@ make.feature.subset.heatmap = function(language,path) {
 	colnames(data.subset) = get.language(geo_data$wals_code[as.numeric(colnames(data.subset))])
 	rownames(data.subset) = get.feature(best.features,shift=10)
 
-# And voila!
+# Ready the file, and output the finished heatmap
 	pdf(path)
 	par(oma=c(2,2,2,16))
 	heatmap(data.subset,Rowv=NA,Colv=NA,col=brewer.pal(max(nlevels),"Set1"),ColSideColors=colcolors)
@@ -88,10 +88,3 @@ make.feature.subset.heatmap("awt","graphs/graph2awt.pdf")
 make.feature.subset.heatmap("kew","graphs/graph2kew.pdf")
 make.feature.subset.heatmap("kob","graphs/graph2kob.pdf")
 make.feature.subset.heatmap("yim","graphs/graph2yim.pdf")
-
-
-#rownames(data.subset) = paste("F",names(best.features),sep="")
-#pdf("graphs/graph2wnumbers.pdf")
-#par(oma=c(2,2,2,2))
-#heatmap(data.subset,Rowv=NA,Colv=NA)
-#dev.off()
