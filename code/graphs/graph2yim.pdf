@@ -2,8 +2,8 @@
 %Å‚Å„ÅœÅ”\r
 1 0 obj
 <<
-/CreationDate (D:20120308160310)
-/ModDate (D:20120308160310)
+/CreationDate (D:20120309153704)
+/ModDate (D:20120309153704)
 /Title (R Graphics Output)
 /Producer (R 2.11.1)
 /Creator (R)
@@ -495,7 +495,7 @@ BT
 /F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 187.60 Tm [(P) 50 (ostv) 25 (erbal Negativ) 25 (e Mor) -30 (phemes)] TJ
 ET
 BT
-/F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 206.35 Tm [(P) 50 (osition of Negativ) 25 (e W) 30 (ord With Respect to Subject, Object, and V) 80 (erb)] TJ
+/F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 206.35 Tm [(P) 50 (osition of Negativ) 25 (e W) 30 (ord With Respect to S) 20 (, O) 40 (, & V)] TJ
 ET
 BT
 /F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 225.11 Tm [(Negativ) 25 (e Mor) -30 (phemes)] TJ
@@ -513,7 +513,7 @@ BT
 /F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 300.12 Tm [(Order of Adjectiv) 25 (e and Noun)] TJ
 ET
 BT
-/F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 318.87 Tm [(Relationship betw) 10 (een the Order of O & V and the Order of Adj & N)] TJ
+/F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 318.87 Tm [(O & V Order) -15 (ing and the Adj & N Order) -15 (ing)] TJ
 ET
 BT
 /F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 337.63 Tm [(Gender Distinctions in Independent P) 50 (ersonal Pronouns)] TJ
@@ -522,7 +522,7 @@ BT
 /F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 356.38 Tm [(P) 50 (erson Mar) -15 (king on Adpositions)] TJ
 ET
 BT
-/F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 375.13 Tm [(Relationship betw) 10 (een the Order of O & V and the Order of Adp & NP)] TJ
+/F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 375.13 Tm [(O & V Order) -15 (ing and the Adposition & NP Order) -15 (ing)] TJ
 ET
 BT
 /F2 1 Tf 8.00 0.00 -0.00 8.00 309.17 393.88 Tm [(Alignment of V) 80 (erbal P) 50 (erson Mar) -15 (king)] TJ
@@ -533,7 +533,7 @@ Q
 endstream
 endobj
 7 0 obj
-14031
+13994
 endobj
 3 0 obj
 <<
@@ -549,7 +549,7 @@ endobj
 <<
 /ProcSet [/PDF /Text]
 /Font <</F2 9 0 R >>
-/ExtGState << /GSais 10 0 R >>
+/ExtGState << >>
 >>
 endobj
 8 0 obj
@@ -568,31 +568,24 @@ endobj
 /BaseFont /Helvetica
 /Encoding 8 0 R
 >> endobj
-10 0 obj
-<<
-/Type /ExtGState
-/AIS false
->>
-endobj
 xref
-0 11
+0 10
 0000000000 65535 f 
 0000000021 00000 n 
 0000000164 00000 n 
-0000014398 00000 n 
-0000014481 00000 n 
+0000014361 00000 n 
+0000014444 00000 n 
 0000000213 00000 n 
 0000000293 00000 n 
-0000014377 00000 n 
-0000014576 00000 n 
-0000014833 00000 n 
-0000014929 00000 n 
+0000014340 00000 n 
+0000014525 00000 n 
+0000014782 00000 n 
 trailer
 <<
-/Size 11
+/Size 10
 /Info 1 0 R
 /Root 2 0 R
 >>
 startxref
-14979
+14878
 %%EOF
