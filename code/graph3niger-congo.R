@@ -1,3 +1,4 @@
+require("RColorBrewer")
 source("subs.R")
 
 family_data = read.table("data/w_family_data.csv",sep=",",quote="\"",header=F,skip=2)
@@ -26,20 +27,44 @@ family_data = family_data[order(family_data$long),]
 # NA.
 sorted.features = sort(colMeans(is.na(family_data[,10:width])))
 
-# Remove the V's from the colnames
-#names(sorted.features) = substr(names(sorted.features),2,4)
+# Transpose the data and remove non-feature columns
+data.subset = t(family_data[,11:ncol(family_data)])
 
-# Get the 15 best-represented features
-best.features = sorted.features[1:15]
+# Make sure we have the 15-best represented features, and
+# throw out invariant features. Normalize the feature values.
+best.features = names(sorted.features[1:15])
 
-# Extract the features, label the data
-data.subset = t(family_data[,as.numeric(names(best.features))])
+nlevels = rep(NA,15)
+difference = Inf
+index = 15
+while(difference!=0) {
+	new.best.features = best.features
+	for(i in 1:length(best.features)) {
+		feature.row = data.subset[best.features[i],]
+		nlevels[i] = length(levels(as.factor(feature.row)))
+		if(nlevels[i]==1) {
+			new.best.features = new.best.features[-i]
+		} else {
+			data.subset[best.features[i],] = as.numeric(factor(data.subset[best.features[i],],labels=1:nlevels[i]))
+		}
+	}
+
+	difference = 15-length(new.best.features)
+	if(difference > 0) {
+		best.features = c(new.best.features,names(sorted.features[(index+1):(index+difference)]))
+		index = index+difference
+	}
+}
+
+# Get rid of all of the other features
+data.subset = data.subset[(best.features),]
+
+# Set the names of the languages and the features.
 colnames(data.subset) = get.language(family_data$wals_code)
-rownames(data.subset) = get.feature(names(best.features),shift=0)
+rownames(data.subset) = get.feature(best.features,shift=0)
 
-# Quick fix for names.
-rownames(data.subset)[1] = "Order of O & V and the Order of RC & N"
-rownames(data.subset)[11] = "Position of Neg Morphs in SOV Languages"
-
+# Output the file
+pdf("graphs/graph3nigercongo.pdf")
 par(oma=c(2,2,2,15))
-heatmap(data.subset,Rowv=NA,Colv=NA,scale="none")
+heatmap(data.subset,Rowv=NA,Colv=NA,scale="none",col=brewer.pal(max(nlevels),"Set1"))
+dev.off()

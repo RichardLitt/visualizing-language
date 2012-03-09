@@ -23,9 +23,6 @@ names(geo_data)[11:width] = as.character((11:width))
 # NA.
 sorted.features = sort(colMeans(is.na(geo_data[,11:width])))
 
-# Remove the V's from the colnames
-#names(sorted.features) = substr(names(sorted.features),2,4)
-
 
 make.feature.subset.heatmap = function(language,path) {
 # Get the subset of the features we want, relative to
@@ -52,7 +49,7 @@ make.feature.subset.heatmap = function(language,path) {
 		for(i in 1:length(best.features)) {
 			feature.row = data.subset[best.features[i],]
 			nlevels[i] = length(levels(as.factor(feature.row)))
-			if(nlevels[i]==1) {
+			if(nlevels[i]<=1) {
 				new.best.features = new.best.features[-i]
 			} else {
 				data.subset[best.features[i],] = as.numeric(factor(data.subset[best.features[i],],labels=1:nlevels[i]))
