@@ -1,7 +1,7 @@
 \begin{thebibliography}{}
 
 \bibitem[\protect\citename{Chomsky}2000]{chomsky}
-N.~Chomsky.
+Noam Chomsky.
 \newblock 2000.
 \newblock {\em New Horizons in the Study of Language and Mind}.
 \newblock Cambridge University Press, Cambridge, UK.
@@ -14,12 +14,12 @@ Christopher Culy.
 \newblock 10.1007/BF00630918.
 
 \bibitem[\protect\citename{Cysouw}2011]{cysouw2011}
-M.~Cysouw.
+Michael Cysouw.
 \newblock 2011.
 \newblock Quantitative explorations of the world-wide distribution of rare
   characteristics, or: the exceptionality of northwestern european languages.
-\newblock In H.~Simon and Heike Wiese, editors, {\em Expecting the Unexpected},
-  pages 411--431. De Gruyter Mouton, Berlin, DE.
+\newblock In Horst Simon and Heike Wiese, editors, {\em Expecting the
+  Unexpected}, pages 411--431. De Gruyter Mouton, Berlin, DE.
 
 \bibitem[\protect\citename{{Daum\'e III} and Campbell}2007]{daume07implication}
 Hal {Daum\'e III} and Lyle Campbell.
@@ -36,14 +36,14 @@ Hal {Daum\'e III}.
   Linguistics (NAACL)}, Boulder, CO.
 
 \bibitem[\protect\citename{Dryer and Haspelmath}2011]{wals-2011}
-Matthew~S. Dryer and Martin Haspelmath, editors.
+Matthew Dryer and Martin Haspelmath, editors.
 \newblock 2011.
 \newblock {\em The World Atlas of Language Structures Online}.
 \newblock Max Planck Digital Library, Munich, 2011 edition.
 
 \bibitem[\protect\citename{Dunn \bgroup et al.\egroup
   }2011]{Dunn_Greenhill_Levinson_Gray_2011}
-Michael Dunn, Simon~J Greenhill, Stephen~C Levinson, and Russell~D Gray.
+Michael Dunn, Simon Greenhill, Stephen Levinson, and Russell Gray.
 \newblock 2011.
 \newblock Evolved structure of language shows lineage-specific trends in
   word-order universals.
@@ -57,11 +57,11 @@ Ryan Georgi, Fei Xia, and Will Lewis.
 \newblock In {\em Proceedings of COLING 2010}.
 
 \bibitem[\protect\citename{Greenberg}1963]{greenberg}
-J.H. Greenberg.
+Joseph Greenberg.
 \newblock 1963.
 \newblock Some universals of grammar with particular reference to the order of
   meaningful elements.
-\newblock In J.H. Greenberg, editor, {\em Universals of Language}, pages
+\newblock In Joseph Greenberg, editor, {\em Universals of Language}, pages
   58--90. MIT Press, Cambridge, MA.
 
 \bibitem[\protect\citename{Lewis and Xia}2008]{lewis:xia:08}
@@ -79,7 +79,7 @@ M.~Paul Lewis, editor.
 
 \bibitem[\protect\citename{Mayer \bgroup et al.\egroup }2010]{mayer:etal:2010}
 Thomas Mayer, Christian Rohrdantz, Frans Plank, Peter Bak, Miriam Butt, and
-  Daniel~A. Keim.
+  Daniel Keim.
 \newblock 2010.
 \newblock Consonant co-occurrence in stems across languages: automatic analysis
   and visualization of a phonotactic constraint.
@@ -96,8 +96,7 @@ Multitree.
 
 \bibitem[\protect\citename{Rohrdantz \bgroup et al.\egroup
   }2010]{rohrdantz:etal:2010}
-Christian Rohrdantz, Thomas Mayer, Miriam Butt, Frans Plank, and Daniel~A.
-  Keim.
+Christian Rohrdantz, Thomas Mayer, Miriam Butt, Frans Plank, and Daniel Keim.
 \newblock 2010.
 \newblock Comparative visual analysis of cross-linguistic features.
 \newblock In {\em Proceedings of the International Symposium on Visual
